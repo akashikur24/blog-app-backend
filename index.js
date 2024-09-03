@@ -3,10 +3,10 @@ require("dotenv").config();
 const cors = require("cors");
 
 const db = require("./config/db");
-const userRoutes = require("./routes/user");
 
 const blogRoutes = require("./routes/blog");
 const followRoutes = require("./routes/follow");
+const userRoutes = require("./routes/user");
 const { clearBin } = require("./utils/cron");
 
 const app = express();
